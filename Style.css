@@ -1,0 +1,253 @@
+form
+{
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+	margin: 10px;
+	
+		
+}
+
+.Container
+{
+	padding: 10px;
+	background-image: linear-gradient(2deg, #b8c6db 0%, #f5f7fa 74%);
+	border-radius: 3px;
+}
+
+.grid-wrapper
+{
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+}
+
+.zone
+{
+	/*display: flex;
+	width: 100%;*/
+	margin: 20px;
+	padding: 60px;
+	padding-right: 100px;
+	border-radius: 10px;
+}
+
+.bg
+{
+	background-color:#f1ecec;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.bg-blue
+{
+	background-color: #dfe1e4;
+}
+
+.first
+{
+	
+}
+
+.bold
+{
+font-weight: bold;
+}
+
+.l-input
+{  
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+/*  .first {
+        font-size: 0.55em;
+        padding: 0px;
+
+    }
+  */
+  .l-input,.Box{
+    	width: 60vw;
+   }
+}
+
+/*.zone>div{
+	width: 100%;
+}*/
+
+#Address, #CAddress
+{   
+	/*width: 400px;*/
+	/*border-width: 2px;
+	border-radius: 3px;*/
+	width: 100%;
+	padding: 8px 20px;
+	margin: 8px 0;
+ 	border: 2px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.Box
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	border-radius: 5px;	
+	/*width: 100%;*/
+}
+
+.push
+{
+	margin-left: 200px;
+}
+
+.wrap
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gap 
+{
+grid-gap: 50px;
+}
+
+.m-input
+{
+  width: 70%;
+  padding: 4px 17px;
+  margin: 5px 10px;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;	
+}
+
+.r-input
+{
+	-ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+
+.l-input:focus, .m-input:focus, .r-input:focus
+{
+/*  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;*/
+  box-shadow: 0 0 8px rgba(24, 133, 237, 1);
+  border: 1px solid rgba(24,133,237, 1);
+  outline: none;
+}
+
+.push-rt
+{
+	margin-left: 50px;
+}
+
+/*.spread
+{
+	margin-left: 80px;
+	margin-right: 40px;
+}*/
+
+/*#form-head
+{
+	display: flex;
+	justify-content: center;
+	flex-grow: 2;
+}*/
+
+/*#names
+{
+	display: flex;
+	justify-content: space-around;
+	border: 3px solid indianred;
+	margin: 20px;
+	padding: 20px;
+}*/
+
+/*#firstname
+{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#fname 
+{
+	margin-left: 20px;
+}
+
+#lastname
+{
+	display: flex;
+	justify-content: center;
+}
+
+#lname 
+{
+	margin-left: 20px;
+}*/
+
+/*#contacts
+{
+	display: flex;
+	justify-content: space-around;
+	border: 3px solid indianred;
+	margin: 20px;
+	padding: 20px;
+	padding-left: 73px;
+}*/
+
+/*
+#Birthdaygender
+{
+	display: flex;
+	justify-content:space-around;
+	border: 3px solid indianred;
+	margin: 20px;
+	padding: 20px;
+	padding-left: 70px;
+	align-items: center;
+
+
+}
+
+#Birthday
+{
+	display: flex;
+	margin-left: -100px;
+}
+
+#birthday
+{
+	margin-left: 10px;
+}*/
+
+/*.head
+{
+	display: flex;
+	justify-content: center;
+}
+*/
+
+
+/*.Block
+{
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+*/
+/*.large
+{
+	height: 250px;
+}
+*/
