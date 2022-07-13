@@ -42,10 +42,6 @@ form
 	background-color: #dfe1e4;
 }
 
-.first
-{
-	
-}
 
 .bold
 {
@@ -74,7 +70,15 @@ font-weight: bold;
   box-sizing: border-box;	
 }
 
-
+.xs-input
+{
+	width: 4em;
+	height: 2em;
+	padding: 8px 17px;
+	margin: 8px;
+	margin-left: 0;
+	margin-right: 15px;
+}
 
 
 /*.zone>div{
@@ -161,23 +165,9 @@ grid-gap: 50px;
 	margin-bottom: 100px;
 }
 
-.btn
-{
-	padding: 15px;
-	padding-left: 28px;
-	padding-right: 28px;
-	border-radius: 8px;
-	background:#1188ff ;
-	border-color: ;
-	color: white;
-	/*box-shadow:  rgba(0, 0, 0, 0.1) 0px 5px 14px;*/
-	font-size: 0.9em;
-	font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
-}
-
-
-
-/* CSS */
+/* ***********************************
+Green Button
+*******************/
 .button-41 {
   background-color: initial;
   background-image: linear-gradient(-180deg, #00D775, #00BD68);
@@ -199,9 +189,9 @@ grid-gap: 50px;
   touch-action: manipulation;
   user-select: none;
   -webkit-user-select: none;
-  vertical-align: top;
+  /* vertical-align: top; */
   white-space: nowrap;
-  /*width: 10%;*/
+   width: 10%; /*Property is ignored due to the display. With 'display: block', vertical-align should not be used.  */
   z-index: 9;
   border: 0;
 }
@@ -210,10 +200,6 @@ grid-gap: 50px;
   background: #00bd68;
 }
 
-.masters
-{
-	height: 400px;
-}
 
 @media only screen and (max-width: 600px) {
 /*  .first {
