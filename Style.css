@@ -62,7 +62,7 @@ font-weight: bold;
 .m-input
 {
   width: 70%;
-  padding: 4px 17px;
+  padding: 10px 17px;
   margin: 5px 10px;
   display: inline-block;
   border: 2px solid #ccc;
@@ -109,10 +109,6 @@ font-weight: bold;
 	/*width: 100%;*/
 }
 
-.push
-{
-	margin-left: 10px;
-}
 
 .wrap
 {
@@ -148,6 +144,11 @@ grid-gap: 50px;
   outline: none;
 }
 
+.push
+{
+	margin-left: 10px;
+}
+
 .push-rt
 {
 	margin-left: 50px;
@@ -164,6 +165,12 @@ grid-gap: 50px;
 {
 	margin-bottom: 100px;
 }
+
+.to-left
+{
+	margin-left: 0px;
+}
+
 
 /* ***********************************
 Green Button
