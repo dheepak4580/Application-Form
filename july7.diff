@@ -1,0 +1,78 @@
+diff --git a/Style.css b/Style.css
+index 8fb4749..70c7ec9 100644
+--- a/Style.css
++++ b/Style.css
+@@ -62,7 +62,7 @@ font-weight: bold;
+ .m-input
+ {
+   width: 70%;
+-  padding: 4px 17px;
++  padding: 10px 17px;
+   margin: 5px 10px;
+   display: inline-block;
+   border: 2px solid #ccc;
+@@ -165,6 +165,11 @@ grid-gap: 50px;
+ 	margin-bottom: 100px;
+ }
+ 
++.to-left
++{
++	margin-left: 0px;
++}
++
+ /* ***********************************
+ Green Button
+ *******************/
+diff --git a/form.js b/form.js
+index 238f46e..59dce2c 100644
+--- a/form.js
++++ b/form.js
+@@ -1,4 +1,4 @@
+-var input = document.getElementById('phone');
++var phone = document.getElementById('phone');
+ var form = document.getElementById('form');
+ var country = document.getElementById('Cc');
+ var India = country.childNodes[1];
+@@ -19,10 +19,26 @@ var otherCountries = country.childNodes[3];
+ 	}
+ });
+ */
+-input.oninvalid = function(event){
+-    event.target.setCustomValidity('Phone number should start with a number from 6 to 9 and it should consist of 10 numbers in total');
+-	console.log(event);
++phone.oninput = function(event){
++	event.target.setCustomValidity("");
++	if(!event.target.validity.valid){
++		event.target.setCustomValidity('Phone number should start with a number from 6 to 9 and it should consist of 10 numbers in total');
++		console.log(event.target.validity);
++	}
++	console.log(event.target.validity);
++	// event.target.setCustomValidity('');
+ }
+ 
++// input.oninput = function(event){
++// 	event.target.setCustomValidity(" ");
++// }
++
++
++// input.addEventListener('input',function(event){
++// 	if( event.target.validity === 'valid'){
++// 		event.target.setCustomValidity('');
++// }
++// });
++
+ India.value= "+" + India.value;
+ otherCountries.value = "+" + otherCountries.value;
+diff --git a/index.html b/index.html
+index f20d1cc..9969393 100644
+--- a/index.html
++++ b/index.html
+@@ -31,7 +31,7 @@
+ 					<div class="  ">
+ 						<label for="Cc" class="bold" >Phone </label><br>
+ 						<div class="wrap">
+-							<select name="countryCode" id="Cc" class="xs-input">
++							<select name="countryCode" id="Cc" class="m-input to-left">
+ 								<option data-countryCode="IN" value="91" Selected>India (+91)</option>
+ 									<optgroup label="Other countries">
+ 									<option data-countryCode="DZ" value="213">Algeria (+213)</option>
