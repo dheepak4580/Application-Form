@@ -183,7 +183,7 @@ Green Button
   color: #FFFFFF;
   cursor: pointer;
   /*display: inline-block;*/
-  display: block;
+  /* display: block; */
  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
   height: 44px;
   line-height: 44px;
@@ -198,8 +198,9 @@ Green Button
   -webkit-user-select: none;
   /* vertical-align: top; */
   white-space: nowrap;
-   width: 10%; /*Property is ignored due to the display. With 'display: block', vertical-align should not be used.  */
-  z-index: 9;
+   width: 10em; /*Property is ignored due to the display. With 'display: block', vertical-align should not be used.  */
+ 
+   z-index: 9;
   border: 0;
 }
 
@@ -227,6 +228,14 @@ Green Button
 	.zone> div
 	{
 	margin-right: auto;
+	}
+	.wrap
+	{
+		display: block;
+	}
+	.button-41
+	{
+		margin-right: auto;
 	}
 
 }

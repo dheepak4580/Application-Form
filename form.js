@@ -1,6 +1,7 @@
 var phone = document.getElementById('phone');
 var form = document.getElementById('form');
 var country = document.getElementById('Cc');
+var input = document.getElementsByTagName('input');
 // var India = country.children[0];
 // var otherCountries = country.children[1];
 
@@ -11,8 +12,12 @@ phone.oninput = function(event){
 		event.target.setCustomValidity('Phone number should start with a number from 6 to 9 and it should consist of 10 numbers in total');
 	}
 }	
-	
-
+	console.log(input);
+// input.addEventListener("focus",function(event){
+// 	console.log(event.target);
+// 	event.target.style.background ="lightblue";
+// },true
+// );
 
 // India.value= "+" + India.value;
 // otherCountries.value = "+" + otherCountries.value;
