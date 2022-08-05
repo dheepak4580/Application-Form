@@ -12,12 +12,18 @@ phone.oninput = function(event){
 		event.target.setCustomValidity('Phone number should start with a number from 6 to 9 and it should consist of 10 numbers in total');
 	}
 }	
-	console.log(input);
-// input.addEventListener("focus",function(event){
-// 	console.log(event.target);
-// 	event.target.style.background ="lightblue";
-// },true
-// );
+
+document.addEventListener("focus",(event)=>{
+	
+	event.target.style.background ='rgb('+215+','+250+','+247+')';
+},true
+);
+
+document.addEventListener("blur",(event)=>{
+	
+	event.target.style.background ="";
+},true
+);
 
 // India.value= "+" + India.value;
 // otherCountries.value = "+" + otherCountries.value;
