@@ -1,1 +1,1 @@
-This project is a simple demo front end version of a typical Application form made with Html, Css and JS. My objective in making this project is to apply my basic Html, Css and JS script skills. 
+This project is a simple demo front end version of a typical Application form made with Html, Css and JS. My objective in making this project is to apply my basic Html, Css and JS script skills. This does not store the data typed in the input fields of the demo page. I am planning to make storage and retrieval features once I finish learning the backend tools. Thank You!! 
