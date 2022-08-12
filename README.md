@@ -1,10 +1,1 @@
-# Application-Form
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="Style.css">
-
-	<title>Register</title>
-</head>
-<h1 class"container">Hey there!!!</h1>
-<h5>IM Dheepak</h5>
+This project is a simple demo front end version of a typical Application form made with Html, Css and JS. My objective in making this project is to apply my basic Html, Css and JS script skills. 
